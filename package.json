@@ -1,0 +1,41 @@
+{
+	"name": "@kwelch/gh-branch-change-cli",
+	"version": "1.0.0",
+	"description": "CLI Tool for updating GitHub default branches",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kwelch/gh-branch-change-cli.git"
+	},
+	"keywords": [
+		"cli",
+		"github",
+		"default",
+		"branch"
+	],
+	"author": "Kyle Welch <kwelch0626@gmail.com> (https://kwelch.dev/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kwelch/gh-branch-change-cli/issues"
+	},
+	"homepage": "https://github.com/kwelch/gh-branch-change-cli#readme",
+	"dependencies": {
+		"@octokit/rest": "^18.1.0",
+		"chalk": "^4.1.0",
+		"clear": "^0.1.0",
+		"dotenv": "^8.2.0",
+		"enquirer": "^2.3.6",
+		"loglevel": "^1.7.1",
+		"loglevel-plugin-prefix": "^0.8.4",
+		"meow": "^9.0.0",
+		"term-size": "^2.2.1"
+	},
+	"devDependencies": {
+		"eslint": "^7.19.0",
+		"prettier": "^2.2.1"
+	}
+}
