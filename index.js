@@ -181,7 +181,7 @@ async function main(
 		const repoDetails = repoWithInvalidDefaultBranch[repoName];
 
 		logger.debug({
-			owner: repoDetails.owner,
+			owner: repoDetails.owner.login,
 			repo: repoDetails.name,
 			branch: repoDetails.default_branch,
 			new_name: preferredBranchName,
@@ -190,7 +190,7 @@ async function main(
 		renamePromises.push(
 			octokit.repos
 				.renameBranch({
-					owner: repoDetails.owner,
+					owner: repoDetails.owner.login,
 					repo: repoDetails.name,
 					branch: repoDetails.default_branch,
 					new_name: preferredBranchName,
