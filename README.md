@@ -4,6 +4,8 @@
 
 ## How to use
 
+You will need a `GITHUB_TOKEN` environment variable, you can either specify it in a `.env`. It will need `repo` scope access.
+
 1. Clone the repo
 1. run `yarn`
 1. run `yarn start``
